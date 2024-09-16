@@ -1,0 +1,355 @@
+@media only screen and (max-width: 1600px){
+    html{
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    .footer{
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    html{
+        font-size: 62.5%;
+    }
+}
+
+@media only screen and (max-width: 1040px){
+    html{
+        font-size: 55%;
+    }
+
+    .hero-section{
+        padding-bottom: 0;
+    }
+
+    .short-desc{
+        margin-bottom: 4.8rem;
+        padding-left: 6.4rem;
+    }
+
+    .tea-name,
+    .coffee-name{
+        font-size: 1.6rem;
+    }
+
+    .order-btn,
+    .coffee-ord-btn{
+        font-size: 1.8rem;
+    }
+
+    .img-box{
+        width: 18rem;
+        height: 10rem;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .brand-heading{
+        font-size: 3rem;
+    }
+
+    .heading{
+        font-size: 4rem;
+    }
+
+    .allTea,
+    .allCoffee{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* justify-content: center; */
+        row-gap: 3rem;
+    }
+
+    .order-1{
+        margin-left: 3.6rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .hero-img-box{
+        padding: 0;
+        width: 20%;
+        margin-left: 0;
+    }
+    
+    .short-desc{
+        padding-left: 3%;
+        max-width: 70%;
+    }
+    
+    .cta-btn{
+        margin-top: 1.6rem;
+    }
+    
+    .brand-heading{
+        font-size: 2.4rem;
+    }
+
+    .brand-desc{
+        font-size: 1.4rem;
+    }
+
+    .cta-btn{
+        font-size: 1.6rem;
+    }
+
+    .sec-feature-img{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    html{
+        font-size: 52%;
+    }
+
+    .header-nav{
+        font-size: 1.6rem;
+        padding: 0.3rem 1rem;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+    .tea-detail{
+        font-size: 1.2rem;
+    }
+
+    .benefits{
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn,
+    .btn-coffee{
+        font-size: 1.6rem;
+    }
+
+    .heading,
+    .tea-detail{
+        margin-bottom: 1.6rem;
+    }
+
+    .circle,
+    .circle-coffee{
+        width: 80%;
+    }
+
+    
+    .header{
+        padding: 1.6rem 4.8rem;
+    }
+    
+    .container{
+        padding: 6.4rem 4.8rem;
+    }
+
+    .hero-section{
+        padding: 0 4.8rem;
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .brand-heading{
+        font-size: 2rem;
+    }
+
+    .brand-desc{
+        font-size: 1.2rem;
+        max-width: 34rem;
+    }
+
+    .cta-btn{
+        padding: 0.8rem 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .header nav{
+        position: absolute;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: rgba(17, 17, 17, 0.5);
+        overflow: hidden;
+        z-index: 6;
+    }
+    
+    .head-nav{
+        position: absolute;
+        width: 24rem;
+        height: 45rem;
+        background-color: var(--black-bg);
+        box-shadow: -0.5rem 0 1rem #222;
+        border-radius: 30rem 0 0 30rem;
+        left: 60%;
+        top: 50%;
+        flex-direction: column;
+        justify-content:center;
+        gap: 7rem;
+        padding-left: 2rem;
+        z-index: 10;
+        transform: rotate(180deg) translateY(-50%);
+        transform-origin: 100% 0%;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes menuIn {
+        0% {
+            transform: rotate(180deg) translateY(-50%);
+        }
+
+        100% {
+            transform: rotate(0) translateY(-50%);
+        }
+    }
+
+    @keyframes menuOut {
+        0% {
+            transform: rotate(0) translateY(-50%);
+        }
+        
+        100% {
+            transform: rotate(-180deg) translateY(-50%);
+        }
+    }
+
+    .head-nav li:first-child,
+    .head-nav li:last-child{
+        margin-left: 5rem;
+    }
+
+    .ham-menu{
+        display: block;
+    }
+
+    .close{
+        display: block;
+        opacity: 0;
+    }
+
+    @keyframes FadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes FadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            width: 0vw;
+        }
+    }
+
+    .footer-nav{
+        gap: 1rem;
+    }
+
+    .desktop-hide{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 420px){
+
+    .hero-section{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .short-desc{
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        margin: 2.4rem 0;
+    }
+
+    .hero-img-box{
+        align-self: center;
+    }
+
+    .mob-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tea-desc{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        order: 2;
+    }
+
+    .benefits{
+        align-self: flex-start;
+    }
+
+    .order-1,
+    .btn,
+    .btn-coffee{
+        margin-left: 0;
+    }
+
+    .tea-feature-img,
+    .coffee-feature-img{
+        border: 2px solid var(--light-gray);
+        width: 72%;
+    }
+
+    .order-form{
+        padding: 4rem;
+    }
+
+    .allTea,
+    .allCoffee{
+        flex-wrap: nowrap;
+        justify-content: unset;
+        overflow: scroll;
+        padding: 6.4rem 2rem;
+        gap: 2.4rem;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer-nav{
+        gap: 5rem;
+    }
+
+    .copyright{
+        margin: 0;
+        order: 3;
+    }
+
+    .header{
+        padding: 1.6rem 2.4rem;
+    }
+
+    .ham-menu{
+        right: 3.5rem;
+    }
+
+    .close-icon{
+        width: 2rem;
+        height: 2rem;
+    }
+}
